@@ -1,0 +1,95 @@
+.category-left{
+    width: 10%;
+}
+.category-right{
+    width: 80%;
+}
+.container__top h2{
+    background-color: rgba(0, 0, 0, 0.75);
+    height: 70px;
+    padding: 18px;
+    color: white;
+    text-align: center;
+}
+.container__size{
+    font-size: 21px;
+    margin-top: 10px;
+    justify-content: center;
+    font-family: sans-serif;
+    font-style: italic;
+}
+
+.container__size-title{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.container__size-list{
+    display: grid;
+    grid-template-columns: 45px 45px 45px ;
+    grid-template-rows: 45px 45px 45px 45px;  
+}
+.container__size-list li{
+    font-weight: bold;
+    font-family: 'Times New Roma';
+}
+
+.size-list-submit{
+    height: 35px;
+    width:  35px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.container__trademark{
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 40px;
+}
+.container__trademark p{
+    color:black;
+    font-weight: bold;
+    font-style: italic;
+}
+.container__trademark ul li a{
+    color:#333;
+}
+.container__trademark ul li:hover{
+    background-color: whitesmoke;
+} 
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.category-right-content-item{
+
+    background-color: whitesmoke;
+    border:0.5px solid black;
+    border-radius: 5px;
+    font-size: 12px;
+    text-align: center;
+    padding-bottom: 20px;
+
+}
+.swapper{
+    height:auto;
+}
+.category-right-content-item img{
+    width: 100%;
+}
+.category-right-content{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+.category-right-content-item h1{
+    font-size: 16px;
+    color: #333;
+}
+.category-right-content-item p{
+    font-size: 16px;
+}
+.category-right-content-item:hover{
+    transform: translateY(-1px);
+    cursor: pointer;
+}  
