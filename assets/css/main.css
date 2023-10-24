@@ -1,8 +1,5 @@
-.category-left{
-    width: 10%;
-}
 .category-right{
-    width: 80%;
+    width: 95%;
 }
 .container__top h2{
     background-color: rgba(0, 0, 0, 0.75);
@@ -11,51 +8,6 @@
     color: white;
     text-align: center;
 }
-.container__size{
-    font-size: 21px;
-    margin-top: 10px;
-    justify-content: center;
-    font-family: sans-serif;
-    font-style: italic;
-}
-
-.container__size-title{
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
-.container__size-list{
-    display: grid;
-    grid-template-columns: 45px 45px 45px ;
-    grid-template-rows: 45px 45px 45px 45px;  
-}
-.container__size-list li{
-    font-weight: bold;
-    font-family: 'Times New Roma';
-}
-
-.size-list-submit{
-    height: 35px;
-    width:  35px;
-    cursor: pointer;
-    font-size: 1rem;
-}
-.container__trademark{
-    margin-top: 20px;
-    font-size: 20px;
-    line-height: 40px;
-}
-.container__trademark p{
-    color:black;
-    font-weight: bold;
-    font-style: italic;
-}
-.container__trademark ul li a{
-    color:#333;
-}
-.container__trademark ul li:hover{
-    background-color: whitesmoke;
-} 
 .row{
     display: flex;
     flex-wrap: wrap;
@@ -69,7 +21,6 @@
     font-size: 12px;
     text-align: center;
     padding-bottom: 20px;
-
 }
 .swapper{
     height:auto;
