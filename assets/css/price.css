@@ -11,11 +11,11 @@ a{
     text-decoration: none;
 }
 .page-title {
-    margin: 10px;
+    margin: 0.625rem;
     color: white;
     text-align: center;
-    text-shadow: 5px 5px 10px black;
-    line-height: 60px;
+    text-shadow: 0.313rem 0.313rem 0.625rem black;
+    line-height: 3.75rem;
 
 }
 .page-title {
@@ -27,18 +27,14 @@ a{
     border-collapse: collapse;
     margin: 0 auto;
     margin-top: 2rem;
-    box-shadow: 10px 2px 30px rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
+    box-shadow: 0.625rem 0.125rem 1.875rem rgba(255, 255, 255, 0.2);
+    border-radius: 0.625rem;
 }
 
 .table__cell {
     padding: 1rem 1.5rem;
     text-align: center;
     color: black;
-}
-
-.table__product-name{
-    font-weight: bold;
 }
 
 .table__header {
@@ -49,6 +45,10 @@ a{
 
 .table__header--color {
     color: #fff;
+}
+
+.table__product-name{
+    font-weight: bold;
 }
 
 .table__body tr:nth-child(odd) {
@@ -73,10 +73,10 @@ a{
     font-weight: bold;
 }
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 80rem) {
 
     html {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
   
     .table__footer {
@@ -84,7 +84,7 @@ a{
     }
     
     .table {
-        border-radius: 10px;
+        border-radius: 0.625rem;
     }
 
     .table__header {

@@ -4,60 +4,57 @@ header{
     justify-content: space-between;
 }
 .header__info{
-    padding-top: 10px;
+    padding-top: 0.625rem;
     text-align: center;
-    text-indent: 20px;
+    text-indent: 1.25rem;
 }
 .header__center{
     display: flex;
-    margin-top: 10px;
+    margin-top: 0.625rem;
     text-align: center;
 }
 .header__logo{
-    margin: 10px 0px 20px 20px;
+    margin: 0.625rem 0rem 1.25rem 1.25rem;
 }
 .header__logo img{
-    width: 250px;
+    width: 15.625rem;
 }
 .search-text{
-    width: 500px;
+    width: 31.25rem;
     text-align: center;
     font-size: 1.2rem;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     font-style: italic;
     height: 100%;
 }
 .search-box{
-    height: 45px;
-    margin: 30px 0 0 100px;;
+    height: 2.813rem;
+    margin: 1.875rem 0 0 6.25rem;;
 }
 
 .header-login-register-cart{
-    word-spacing: 15px;
-    padding: 45px;
-    margin-left: 0px;
+    word-spacing: 0.938rem;
+    padding: 2.813rem;
+    margin-left: 0rem;
 }
 .header-login-register-cart a{
     color:white;
-    font-size: 15px;
+    font-size: 0.938rem;
     text-transform: uppercase;
 
 }
 .header__nav ul {
     background-color: white;
-    padding: 5px 20px;
+    padding: 0.313rem 1.25rem;
     display: flex;
     justify-content: center;
-    line-height: 50px;
-    text-indent: 50px;
+    line-height: 3.125rem;
+    text-indent: 3.125rem;
 }
 .header__nav a {
     color: #333;
-    font-size: 15px;
+    font-size: 0.938rem;
     font-weight: bold;
     text-transform: uppercase;
-}
 
-.header__nav a:hover{
-    color: tomato;
 }
