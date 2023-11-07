@@ -1,10 +1,14 @@
-const startTime = performance.now();
 
-window.addEventListener('load', function () {
-    const loadTime = performance.now() - startTime;
+window.onload = function() {
+    var loadTime = window.performance.timing.domContentLoadedEventEnd-window.performance.timing.navigationStart;
+    var newText = document.createTextNode("Loaded in " + loadTime.toString() + " ms");
+	document.getElementsByTagName("footer")[0].appendChild(newText);
 
-    const loadTimeInSeconds = (loadTime / 1000).toFixed(3);
-    const loadingTimeElement = document.getElementById('loading-time');
-    loadingTimeElement.textContent = `Page load time is: ${loadTimeInSeconds} seconds`;
-    console.log(`Page load time is${loadTimeInSeconds} seconds.`);
-});
+    
+    let links = Array.from(document.getElementsByClassName("nav_element-link"));
+    links.forEach(link => {
+        if(link.href == window.location.href){
+            link.classList.add("nav__element-active")
+        }
+    })
+}
