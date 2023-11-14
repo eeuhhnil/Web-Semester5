@@ -1,4 +1,5 @@
 /* mobile */
+
 @media only screen and (max-width: 739px){
     .header{
         height: 2%;
@@ -82,6 +83,7 @@
     }
 }
 /* table */
+
 @media (min-width:740px) and (max-width: 1023px){
     .header__info{
         font-size: 1.563rem;
@@ -133,8 +135,3 @@
     }
 
 }
-
-
-
-
-
