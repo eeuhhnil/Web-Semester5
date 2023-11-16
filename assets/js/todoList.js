@@ -1,10 +1,12 @@
-let btnAddTaskEl = document.querySelector('button');
+let btnAddTaskEl = document.querySelector('.form-control');
 let taskNameEl = document.querySelector('#content');
+let template = document.querySelector('#task-template')
+
 
 let tasks = getTaskFromLocalStorage();
 renderTask(tasks);
 
-btnAddTaskEl.addEventListener('click', function() {
+btnAddTaskEl.addEventListener('submit', function() {
     if (!taskNameEl.value) {
         alert('Please enter the task name.');
         return false;
@@ -12,7 +14,7 @@ btnAddTaskEl.addEventListener('click', function() {
 
     let taskID = this.getAttribute('id');
     let tasks = getTaskFromLocalStorage();
-    let task = { name: taskNameEl.value, done: false }; // Thêm trường done với giá trị mặc định là false
+    let task = { name: taskNameEl.value, done: false }; 
 
     if (taskID == 0 || taskID) {
         tasks[taskID] = task;
@@ -56,20 +58,28 @@ function toggleTaskStatus(id) {
 }
 
 function renderTask(tasks = []) {
-    let content = '<ul>';
+    const resultContainer = document.querySelector('#result');
+
+    resultContainer.innerHTML = '';
+
+    const fragment = document.createDocumentFragment();
 
     tasks.forEach((task, index) => {
-        content +=  `<li>
-            <div class="task-name ${task.done ? 'done' : ''}">${task.name}</div>
-            <a href="#" onclick="editTask(${index})">Edit</a>
-            <a href="#" onclick="deleteTask(${index})" confirm>Delete</a>
-            <input type="checkbox" ${task.done ? 'checked' : ''} onchange="toggleTaskStatus(${index})"> Done
-        </li>`;
+        const clone = document.importNode(template.content, true);
+
+        clone.querySelector('.task-name').textContent = task.name;
+        clone.querySelector('.edit-link').addEventListener('click', () => editTask(index));
+        clone.querySelector('.delete-link').addEventListener('click', () => deleteTask(index))
+
+        const doneButton = clone.querySelector('.task-status');
+        doneButton.checked = task.done
+        doneButton.addEventListener('change', () => toggleTaskStatus(index));
+
+        fragment.appendChild(clone);
+        
     });
 
-    content += '</ul>';
-
-    document.querySelector('#result').innerHTML = content;
+    resultContainer.appendChild(fragment);
 }
 
 function getTaskFromLocalStorage(){
