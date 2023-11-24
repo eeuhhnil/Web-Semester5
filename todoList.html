@@ -49,22 +49,29 @@
                 <li>
                     <a class="nav_element-link" href="./todoList.html">ToBuyList</a>
                 </li>
-                <li>
-                    <a class="nav_element-link" href="./shipper.html">Shipper</a>
-                </li>
             </ul>
         </nav>
     </header>
     <main>
         <div class="main_about-us">
             <p class= "main_about-us-title">What products do you need to buy?</p>
-            <div class="form-control">
-            <textarea class="content" id="content" placeholder="enter product you need to buy"></textarea>
-            <button>Add</button>
-            </div>
+            <form class="form-control">
+                <input type ="text" class="content" id="content" placeholder="enter product you need to buy" required></input>
+                <button type="submit">Add</button>
+            </form>
             <div id="list-task">
                 <p>List task</p>
                 <div id="result">
+                    <template id="task-template">
+                        <ul class="save-task">
+                            <li>
+                                <div class="task-name"></div>
+                                <a href="#" class="edit-link">Edit</a>
+                                <a href="#" class="delete-link">Delete</a>
+                                <input type="checkbox" class="task-status"> Done
+                              </li>
+                        </ul>
+                      </template>
                     <p>There are no products to buy yet</p>
                 </div>
             </div>
@@ -75,6 +82,6 @@
         <p>Telephone: <a href="tel:+7111 222 3333 ">+7111 222 3333</a></p>
         <p>Copyright By <strong>Duong Thi Hue Linh</strong></p>
     </footer>
-    <script src="/assets/js/todoList.js"></script>
+    <script src="./assets/js/todoList.js"></script>
 </body>
 </html>
