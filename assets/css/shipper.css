@@ -1,0 +1,56 @@
+
+main{
+    background-color: rgba(0, 0, 0, 0.85);
+}
+.shipping-content {
+    padding: 1.875rem;
+    color: white;
+}
+
+.preloader img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.shipper-information__shipper-list-title {
+    text-align: center;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 1.875rem;
+}
+
+#shipper-information {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 0.625rem;
+    padding: 1.25rem;
+    margin: 1.25rem 0rem;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+}
+
+.shipper-information__shipper-card{
+    border: bisque solid;
+    border-radius: 0.625rem;
+    display: flex;
+    width: 31%;
+    flex-direction:column;
+    margin: 1.25rem;
+    padding: 0.625rem;
+}
+
+.shipper-information__shipper-card__element{
+    padding: 0.188rem;
+    word-break: break-all;
+}
+
+.shipper-information_shipper-card_name{
+    text-transform: uppercase;
+}
+
+.shipper-information__shipper-not-available-message{
+    padding: 0.625rem;
+    text-align: center;
+    word-break: break-all;
+}

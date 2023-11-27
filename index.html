@@ -14,9 +14,10 @@
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script type="text/javascript" src="./assets/js/load-time.js"></script>
 </head>
 <body>
-    <header class="header">
+    <header class="header"> 
         <section class="header__info">
             <strong>
                 <a href="">Hotline: +7111 222 3333</a>
@@ -41,16 +42,22 @@
         <nav class="header__nav">
             <ul>
                 <li>
-                    <a href="./index.html">Home</a>
+                    <a class="nav_element-link" href="index.html">Home</a>
                 </li>
                 <li>
-                    <a href="./price.html">All Price</a>
+                    <a class="nav_element-link" href="./price.html">All Price</a>
                 </li>
                 <li>
-                    <a href="./size.html">Size Table</a>
+                    <a class="nav_element-link" href="./size.html">Size Table</a>
                 </li>
                 <li>
-                    <a href="./brand.html">Brand</a>
+                    <a class="nav_element-link" href="./brand.html">Brand</a>
+                </li>
+                <li>
+                    <a class="nav_element-link" href="./todoList.html">ToBuyList</a>
+                </li>
+                <li>
+                    <a class="nav_element-link" href="./shipper.html">Shipper</a>
                 </li>
             </ul>
         </nav>
@@ -64,16 +71,18 @@
                 <div class="category-right row">
                     <div class="category-right-content row ">
                         <div class="category-right-content-item ">
-                            <img class="home-product-item__img" src="./assets/imgs/product1.jpg" alt="boot1" >
-                            <h1 class="home-product-item__name">Adidas NMD R1 Grey</h1>
-                            <li class="home-product-item__icon">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </li>
-                            <p class="home-product-item__price">100$</p>  
+                            <a href="./product.html">
+                                <img class="home-product-item__img" src="./assets/imgs/product1.jpg" alt="boot1" >
+                                <h1 class="home-product-item__name">Adidas NMD R1 Grey</h1>
+                                <li class="home-product-item__icon">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </li>
+                                <p class="home-product-item__price">100$</p> 
+                            </a> 
                         </div>
                         <div class="category-right-content-item ">
                             <img class="home-product-item__img" src="./assets/imgs/product2.jpg" alt="boot1">
