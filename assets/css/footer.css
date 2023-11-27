@@ -5,3 +5,7 @@ footer{
     padding: 0.625rem;
     line-height: 1.563rem;
 }
+
+.header__speed-load-page{
+    font-style: italic;
+}
