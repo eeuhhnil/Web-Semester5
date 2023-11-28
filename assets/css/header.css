@@ -47,6 +47,7 @@ header{
 .header-login-register-cart a:hover{
     font-weight: bold;
 }
+
 .header__nav ul {
     background-color: white;
     padding: 0.313rem 1.25rem;
@@ -68,3 +69,4 @@ header{
     font-weight: bold;
     cursor: pointer;
 }
+
