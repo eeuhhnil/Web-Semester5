@@ -1,17 +1,19 @@
-window.addEventListener("load", async function(){
-    let userApi = 'https://jsonplaceholder.typicode.com/users';
+window.addEventListener("load", async function() {
     const container = document.getElementById("shipper-infor")
     const template = this.document.getElementById("shipper-template")
     let users_list = []
-    function getRandomElement(array) {
-    const copyArray = [...array]
-    const shuffled = copyArray.sort(() => 0.5 - Math.random());
-    return shuffled.slice(0, Math.floor(Math.random() * 10));
+    const shuffled = Math.floor(Math.random() * 2);
+    let userApi;
+    if (shuffled == 0) {
+        userApi = 'https://jsonplaceholder.typicode.com/users?id_gte=7';
+    }
+    if (shuffled == 1) {
+        userApi = 'https://jsonplaceholder.typicode.com/users?id_lte=6';
     }
 
     try {
         const response = await fetch(userApi);
-        users_list = getRandomElement(await response.json());
+        users_list = await response.json();
 
         if (users_list.length === 0) {
             const message = document.createElement("p");
@@ -40,5 +42,4 @@ window.addEventListener("load", async function(){
     } finally {
         document.getElementsByClassName("preloader")[0].style.display = "none";
     }
-
-    })
+});
