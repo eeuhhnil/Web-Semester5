@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/todoList.css">
+</head>
+<body>
+    <header class="header"> 
+        <section class="header__info">
+            <strong>
+                <a href="">Hotline: +7111 222 3333</a>
+                <address>Products available at Store: Lensoveta-23, Saint-Peterburg</address>
+            </strong>
+        </section>
+        <div class="header__center">
+            <section class="header__logo">
+                <img src="./assets/imgs/logo2.jpg" alt="logo" >
+            </section>             
+            <section class="header__form">
+                <form action="" class="search-box">
+                    <input class="search-text" type="text" placeholder="search product">
+                </form>
+            </section>
+            <section class="header-login-register-cart">
+                <a href="#">Login</a>
+                <a href="#">Register</a>
+                <a href="#">Cart</a>
+            </section> 
+        </div>   
+        <nav class="header__nav">
+            <ul>
+                <li>
+                    <a class="nav_element-link" href="index.html">Home</a>
+                </li>
+                <li>
+                    <a class="nav_element-link" href="./price.html">All Price</a>
+                </li>
+                <li>
+                    <a class="nav_element-link" href="./size.html">Size Table</a>
+                </li>
+                <li>
+                    <a class="nav_element-link" href="./brand.html">Brand</a>
+                </li>
+                <li>
+                    <a class="nav_element-link" href="./todoList.html">ToBuyList</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="main_about-us">
+            <p class= "main_about-us-title">What products do you need to buy?</p>
+            <form class="form-control">
+                <input type ="text" class="content" id="content" placeholder="enter product you need to buy" required></input>
+                <button type="submit">Add</button>
+            </form>
+            <div id="list-task">
+                <p>List task</p>
+                <div id="result">
+                    <template id="task-template">
+                        <ul class="save-task">
+                            <li>
+                                <div class="task-name"></div>
+                                <a href="#" class="edit-link">Edit</a>
+                                <a href="#" class="delete-link">Delete</a>
+                                <input type="checkbox" class="task-status"> Done
+                              </li>
+                        </ul>
+                      </template>
+                    <p>There are no products to buy yet</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>     
+        <h2>CONTACT</h2>
+        <p>Telephone: <a href="tel:+7111 222 3333 ">+7111 222 3333</a></p>
+        <p>Copyright By <strong>Duong Thi Hue Linh</strong></p>
+    </footer>
+    <script src="./assets/js/todoList.js"></script>
+</body>
+</html>

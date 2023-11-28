@@ -82,6 +82,7 @@
     }
 }
 /* table */
+
 @media (min-width:740px) and (max-width: 1023px){
     .header__info{
         font-size: 1.563rem;
@@ -133,8 +134,3 @@
     }
 
 }
-
-
-
-
-

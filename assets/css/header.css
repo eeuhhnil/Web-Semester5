@@ -43,6 +43,11 @@ header{
     text-transform: uppercase;
 
 }
+
+.header-login-register-cart a:hover{
+    font-weight: bold;
+}
+
 .header__nav ul {
     background-color: white;
     padding: 0.313rem 1.25rem;
@@ -58,3 +63,10 @@ header{
     text-transform: uppercase;
 
 }
+
+.header__nav a:hover{
+    color:red;
+    font-weight: bold;
+    cursor: pointer;
+}
+
