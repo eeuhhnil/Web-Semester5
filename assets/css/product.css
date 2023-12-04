@@ -1,5 +1,5 @@
 .product{
-    padding: 10px;
+    padding: 0.625rem;
 }
 .product-content-left{
     width: 65%
@@ -9,69 +9,107 @@
 }
 .slider-for{
     width: 80%;
-    padding-right: 20px;
+    padding-right: 1.25rem;
 }
 .slider-for img{
-    border-radius: 10px;
+    border-radius: 0.625rem;
     width: 100%;
 }
 .slider-nav{
     width: 20%;
-    padding-left: 20px;
-    margin-top: 60px;
+    margin: auto;
 }
 .slider-nav img{
     width: 100%;
 }
 .product-content-right{
-    padding-left: 30px;
+    padding-left: 1.875rem;
 }
 .product-content-right-product-name h1{
-    font-size: 40px;
+    font-size: 2.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .product-content-right-product-name li{
-    margin-top: 10px;
+    margin-top: 0.625rem;
 }
 .product-content-right-product-name p{
-    margin-top: 10px;
-    font-size: 30px;
+    margin-top: 0.625rem;
+    font-size: 1.875rem;
 }
 .product-content-right-product-btt{
-    margin-top: 10px;
+    margin-top: 0.625rem;
 }
 .product-content-right-product-btt button{
-    width: 500px;
-    line-height: 50px;
-    font-size: 30px;
+    line-height: 3.125rem;
+    font-size: 1.875rem;
     text-transform: uppercase;
-    border-radius: 5px;
+    border-radius: 0.313rem;
     background-color:rgba(0, 0, 0, 0.75);
     color: white;
 }
 .product-content-right-product-btt button:hover{
     cursor: pointer;
+    background-color: #c23616;
 }
 .widgnet-product{
-    padding: 20px 40px;
-    margin-top: 20px;
-    font-size: 25px;
+    padding: 1.25rem 2.5rem;
+    margin-top: 1.25rem;
+    font-size: 1.563rem;
     border-style: dotted;
 }
-
+.widgnet-product h4,p,address{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
 .slick-prev{
     transform: translateY(40%);
+    position: absolute;
+    left:40%;
 
 }
-
 .slick-next{
     transform: translateY(-40%);
-
+    position: absolute;
+    left:40%;
 }
 .slick-arrow{
-    margin-left: 65px;
-    width: 35px;
-    height: 35px;
+    width: 2.188rem;
+    height: 2.188rem;
     z-index: 1;
     position: relative;
     border: none;
+}
+
+@media only screen and (max-width: 739px){
+    .product-content-right-product-name h1{
+        font-size: 1.188rem;
+    }
+    .product-content-right-product-btt button{
+        width: 6.875rem;
+        line-height: 2.188rem;
+        font-size: 0.813rem;
+    }
+    .product-content-right-product-name p{
+        font-size: 1.25rem;
+    }
+    .widgnet-product{
+        font-size: 0.875rem;
+    }
+    .slider-nav{
+        display: none;
+    }
+}
+/* table */
+@media (min-width:740px) and (max-width: 1023px){
+    .product-content-right-product-name h1{
+        font-size: 1.563rem;
+    }
+    .product-content-right-product-btt button{
+        width: 15.625rem;
+        line-height: 3.125rem;
+        font-size: 1.125rem;
+    }
 }
